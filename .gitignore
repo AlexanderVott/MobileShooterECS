@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+/[Aa]ssets/[Ff]ind[Rr]eference2
+/[Uu]ser[Ss]ettings
+[Ff][Rr]2_[Cc]ache.asset*
+/[Aa]ssets/[Aa]ssets.*
