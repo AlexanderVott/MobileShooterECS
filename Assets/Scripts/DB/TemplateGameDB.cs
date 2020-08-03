@@ -6,4 +6,5 @@ public class TemplateGameDB : ScriptableSingleton<TemplateGameDB>
 {
 	public GameObject playerPrefab;
 	public int playerHealth = 100;
+	public float playerSpeed = 6f;
 }
