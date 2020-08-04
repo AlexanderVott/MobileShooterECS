@@ -1,6 +1,8 @@
 ﻿using Unity.Entities;
 using UnityEngine;
 
+
+[DisableAutoCreation]
 public class PlayerMovementSystem : SystemBase
 {
 	protected override void OnUpdate()

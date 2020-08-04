@@ -1,9 +1,8 @@
-﻿using RedDev.Game.Inputs;
-using Unity.Entities;
-using Unity.Mathematics;
-using Unity.Transforms;
+﻿using Unity.Entities;
 using UnityEngine;
 
+
+[DisableAutoCreation]
 public class PlayerInputSystem : SystemBase
 {
 	private Inputs _input;

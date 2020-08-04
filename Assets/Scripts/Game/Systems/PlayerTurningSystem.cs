@@ -1,11 +1,7 @@
-﻿using Unity.Burst;
-using Unity.Collections;
-using Unity.Entities;
-using Unity.Jobs;
-using Unity.Mathematics;
-using Unity.Transforms;
+﻿using Unity.Entities;
 using UnityEngine;
 
+[DisableAutoCreation]
 public class PlayerTurningSystem : SystemBase
 {
 	protected override void OnCreate()
