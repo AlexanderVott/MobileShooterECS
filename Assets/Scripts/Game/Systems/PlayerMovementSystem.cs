@@ -12,7 +12,6 @@ public class PlayerMovementSystem : SystemBase
 		{
 			var move = new Vector3(input.movement.x, 0f, input.movement.y);
 			move *= speed * dt;
-			var isMovement = input.isMovement;
 
 			var go = body.gameObject;
 			var position = go.transform.position;

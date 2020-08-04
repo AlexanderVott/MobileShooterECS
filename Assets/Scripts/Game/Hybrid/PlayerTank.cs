@@ -12,7 +12,7 @@ namespace RedDev.Game.Player
 		{
 			dstManager.AddComponentData(entity, new PlayerData());
 			dstManager.AddComponentData(entity, new HealthData() { value = TemplateGameDB.instance.playerHealth });
-			dstManager.AddComponentData(entity, new PlayerInputData() { movement =  float2.zero, isMovement = false });
+			dstManager.AddComponentData(entity, new PlayerInputData() { movement =  float2.zero });
 
 			this.entity = entity;
 		}
