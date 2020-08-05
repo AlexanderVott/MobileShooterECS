@@ -23,12 +23,10 @@ public class EnemyPatrolMovementSystem : SystemBase
 	        }
 	        if (math.distance(buffer[patrolData.currentIndexPoint].value, position) <= 0.02f)
 		    {
-		        if (++patrolData.currentIndexPoint >= buffer.Length)
-		        {
+		        if (++patrolData.currentIndexPoint >= buffer.Length) 
 			        patrolData.currentIndexPoint = 0;
-		        }
 
-				agent.SetDestination(buffer[patrolData.currentIndexPoint].value);
+		        agent.SetDestination(buffer[patrolData.currentIndexPoint].value);
 			}
         }).Run();
     }
