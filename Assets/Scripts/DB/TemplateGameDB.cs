@@ -9,4 +9,6 @@ public class TemplateGameDB : ScriptableSingleton<TemplateGameDB>
 	public float playerSpeed = 6f;
 
 	public float cameraSmoothing = 6f;
+
+	public int enemyHealth = 3;
 }
