@@ -2,7 +2,7 @@
 using Unity.Mathematics;
 using UnityEngine;
 
-public class PatrolConvert : MonoBehaviour, IConvertGameObjectToEntity
+public class Patrol : MonoBehaviour, IConvertGameObjectToEntity
 {
 	public Entity entity;
 

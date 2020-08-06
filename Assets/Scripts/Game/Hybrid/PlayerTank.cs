@@ -10,7 +10,7 @@ namespace RedDev.Game.Player
 
 		public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
 		{
-			dstManager.AddComponentData(entity, new PlayerData());
+			//dstManager.AddComponentData(entity, new PlayerData());
 			dstManager.AddComponentData(entity, new HealthData() { value = TemplateGameDB.instance.playerHealth });
 			dstManager.AddComponentData(entity, new PlayerInputData() { movement =  float2.zero });
 

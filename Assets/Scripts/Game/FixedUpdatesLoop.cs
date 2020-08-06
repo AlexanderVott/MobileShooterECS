@@ -7,14 +7,16 @@ public class FixedUpdatesLoop : MonoBehaviour
 	private PlayerMovementSystem _playerMovementSystem;
 	private PlayerTurningSystem _playerTurningSystem;
 	private CameraFollowingSystem _cameraFollowing;
+	private PlayerAttackSystem _playerAttackSystem;
 
-    void Start()
+	void Start()
     {
 	    var world = World.DefaultGameObjectInjectionWorld;
 	    _playerInputSystem = world.GetOrCreateSystem<PlayerInputSystem>();
 	    _playerMovementSystem = world.GetOrCreateSystem<PlayerMovementSystem>();
 	    _playerTurningSystem = world.GetOrCreateSystem<PlayerTurningSystem>();
 	    _cameraFollowing = world.GetOrCreateSystem<CameraFollowingSystem>();
+	    _playerAttackSystem = world.GetOrCreateSystem<PlayerAttackSystem>();
     }
 
     void FixedUpdate()
@@ -23,5 +25,6 @@ public class FixedUpdatesLoop : MonoBehaviour
 	    _playerMovementSystem.Update();
 	    _playerTurningSystem.Update();
 		_cameraFollowing.Update();
-    }
+		_playerAttackSystem.Update();
+	}
 }

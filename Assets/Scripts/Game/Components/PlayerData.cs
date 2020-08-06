@@ -1,7 +1,8 @@
 ﻿using System;
 using Unity.Entities;
 
-[Serializable]
+[GenerateAuthoringComponent]
 public struct PlayerData : IComponentData
 {
+	public Entity prefabEntity;
 }

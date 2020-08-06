@@ -12,7 +12,6 @@ public class PlayerInputSystem : SystemBase
 	{
 		base.OnCreate();
 		_input = Inputs.instance;
-		_ecbSystem = World.GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
     }
 
 	protected override void OnUpdate()
@@ -22,7 +21,5 @@ public class PlayerInputSystem : SystemBase
 		{
 			inputData.movement = movementInput;
 		}).ScheduleParallel();
-
-		_ecbSystem.AddJobHandleForProducer(Dependency);
 	}
 }
